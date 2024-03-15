@@ -30,7 +30,7 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'publish'
+    command: 'dotnet publish -o Release -o Publish'
     publishWebProjects: true
 - task: VSTest@2
   inputs:
